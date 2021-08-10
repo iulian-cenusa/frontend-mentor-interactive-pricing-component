@@ -11,29 +11,70 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(227, 35%, 25%); }
   </style>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <main>
 
-  Pageviews
-  $ /month
+    <div id="top">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <div id="bottom">
+      <div id="pageviews">
+        <span>100K</span> Pageviews
+      </div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <div id="slider-container">
+        <input type="range" min="1" max="5" value="3" id="slider-range">
+      </div>
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div id="permonth">
+        <span>$16.00</span><p>/ month</p>
+      </div>
+
+      <div id="period">
+        <p>Monthly Billing</p>
+        <label id="switch">
+          <input type="checkbox">
+          <span id="switch-switch"></span>
+        </label>
+        <p>Yearly Billing</p>
+        <div id="discount">
+          -25% <span id="hide-discount">discount</span>
+        </div>
+      </div>
+      <hr>
+      <div id="trial">
+        <div id="advantages">
+          <div class="advantages-element">
+            <img src="./images/icon-check.svg" alt="icon-check"><p>Unlimited websites</p>
+          </div>
+          <div class="advantages-element">
+            <img src="./images/icon-check.svg" alt="icon-check"><p>100% data ownership</p>
+          </div>
+          <div class="advantages-element">
+            <img src="./images/icon-check.svg" alt="icon-check"><p>Email reports</p>
+          </div>
+        </div>
+        <button id="btn">Start my trial</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>
+      Coded by <a href="https://github.com/iulian-cenusa"> Iulian Cenuşă</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
