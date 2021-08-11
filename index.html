@@ -27,22 +27,24 @@
     </div>
 
     <div id="bottom">
-      <div id="pageviews">
-        <span>100K</span> Pageviews
+      <div id="order">
+        <div id="pageviews">
+          <span id="pageviews-value">100K</span> Pageviews
+        </div>
+  
+        <div id="slider-container">
+          <input type="range" min="1" max="5" value="3" class="slider-input" id="slider-range">
+        </div>
+  
+        <div id="permonth">
+          <span id="permonth-value">$16.00</span><p>/ month</p>
+        </div>
       </div>
-
-      <div id="slider-container">
-        <input type="range" min="1" max="5" value="3" id="slider-range">
-      </div>
-
-      <div id="permonth">
-        <span>$16.00</span><p>/ month</p>
-      </div>
-
+      
       <div id="period">
         <p>Monthly Billing</p>
         <label id="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="switch-check">
           <span id="switch-switch"></span>
         </label>
         <p>Yearly Billing</p>
@@ -75,6 +77,8 @@
       Coded by <a href="https://github.com/iulian-cenusa"> Iulian Cenuşă</a></p>
     </div>
   </footer>
+
+<script src="app.js"></script>
 
 </body>
 </html>
