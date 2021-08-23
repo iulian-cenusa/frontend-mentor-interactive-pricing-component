@@ -112,6 +112,11 @@ footer{
       
       .slider-input:hover {
         opacity: 1;
+        cursor:grab;
+      }
+
+      .slider-input:active{
+          cursor: grabbing;
       }
       
       .slider-input::-webkit-slider-thumb {
@@ -125,7 +130,6 @@ footer{
         background-size: 70%;
         background-position: center;
         background-color: hsl(174, 86%, 45%);
-        cursor: grabbing;
         box-shadow: 0 8px 20px 10px hsl(174, 77%, 80%);
       }
       

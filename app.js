@@ -23,7 +23,7 @@ function sliderChange(){
             if ( yearlyValue.checked ){
                 perMonthValue.innerHTML = `$${ 12 - 12*0.25}.00`
             }
-            sliderRange.style.background = "linear-gradient(to right, hsl(174, 77%, 80%) 25% , hsl(224, 65%, 95%) 75%)"
+            sliderRange.style.background = "linear-gradient(to right, hsl(174, 77%, 80%) 25% , hsl(224, 65%, 95%) 25%)"
             break
         case "3":
             pageViews.innerHTML = "100K"
@@ -39,7 +39,7 @@ function sliderChange(){
             if ( yearlyValue.checked ){
                 perMonthValue.innerHTML = `$${ 24 - 24*0.25}.00`
             }
-            sliderRange.style.background = "linear-gradient(to right, hsl(174, 77%, 80%) 75% , hsl(224, 65%, 95%) 25%)"
+            sliderRange.style.background = "linear-gradient(to right, hsl(174, 77%, 80%) 75% , hsl(224, 65%, 95%) 75%)"
             break
         case "5":
             pageViews.innerHTML = "1M"
